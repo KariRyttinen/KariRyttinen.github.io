@@ -1,0 +1,29 @@
+body {
+    background-image:url("../kuvat/Tree.jpg");
+    color: white;
+    font-size: 20px;
+    margin-left: 40px
+}
+
+h1 {
+    font-family: 'Times New Roman'
+}
+
+h2 {
+    font-family: Arial
+}
+
+h3 {
+    font-family: Arial
+}
+
+p {
+    font-family: Georgia
+}
+
+img {
+    width: 220px;
+    border: 2px;
+    border-color: red;
+    padding: 20px
+}
