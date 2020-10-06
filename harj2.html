@@ -3,10 +3,33 @@
    <head>
         <title>Harj2</title>
         <meta charset ="UTF-8">
+        <link rel="stylesheet" type="text/css" href="harj2.css">
     </head>
     <body>   
+
+            <button onclick="topFunction()" id="top" title="Ylös">Top</button>
+            <header>
+                    <ul class="navi">
+                        <li class="navi"> <a href="#Lounasmenu">Lounasmenu</a></li>
+                        <li class="navi"> <a href="#Lounashinta">Lounashinta</a></li>
+                        <li class="navi"> <a href="#Aukioloajat">Aukioloajat</a></li>
+                        <li class="navi"> <a href="#Pöytävarauslomake">Pöytävarauslomake</a></li>
+                        <li class="navi"> <a href="#Sijainti">Sijainti</a></li>
+                        <li class="navi"> <a href="#Yhteystiedot">Yhteystiedot</a></li>
+                    </ul>
+                </header>
+
+
+
+
+
+
+        
+        
         <h1>Lappilaisravintola Lounaslista</h1>
-       
+        
+        <a name = "#Lounasmenu"></a>
+        <section id="Lounasmenu">
         <h3>Lounasmenu</h3>
     
         <img src="./kuvat/Kasviskeitto.jpg" alt ="Kasviskeitto">
@@ -54,11 +77,16 @@
                 Suklaamousse </li>
         </ul>
 
+    </section>
+        <a name = "#Lounashinta"></a>
+        <section id="Lounashinta">
             <h3>Lounaanhinta</h3>
 
             <p>Lounaanhinta on 11&#8364; sisältää ruokajuoman - vesi, kotikalja, maito</p>
-    
-    
+        </section>
+
+            <a name = "#Aukioloajat"></a>
+            <section id="Aukioloajat">
             <table> 
                 <tr>
                 <th>Aukioloajat</th>
@@ -84,13 +112,50 @@
                    </tr>
 
                             </table>
+</section>
+                            
+                            <a name = "#Pöytävarauslomake"></a>
+                            <section id="Pöytävarauslomake">
+                            <h3>Pöytävarauslomake</h3>
 
 
+                            Etunimi<br>
+                            <input type="text" name = "enimi" id="enimi"><br>
+                    
+                            Sukunimi<br>
+                            <input type = "text" name = "snimi" id = "snimi"><br>
 
+                            Sähköposti<br>
+                            <input type = "text" name = "sposti" id = "sposti"><br>
 
+                            Puhelinnumero<br>
+                            <input type = "text" name = "pnumero" id = "pnumero"><br>
 
+                            Päivämäärä<br>
+                            <input type = "text" name = "paivamaara" id = "paivamaara"><br>
 
-<address>
+                            Kellonaika<br>
+                            <input type = "text" name = "kello" id = "kello"><br>
+
+                            Erikoistoiveet<br>
+                            <input type = "text" name = "toiveet" id = "toiveet"><br>
+
+                            <button onclick="laheta()">Lähetä tiedot</button>
+
+                            <br>
+                        </section>
+                          
+                            
+ <a name = "#Sijainti"></a>
+<section id="Sijainti">                        
+<h3>Sijainti</h3>
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1892.1759408863672!2d25.72256033523857!3d66.49706189051979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x442b4bed11188d49%3A0x1657bd88c2a942ae!2sHallituskatu%2012%2C%2096100%20Rovaniemi!5e0!3m2!1sfi!2sfi!4v1601961654673!5m2!1sfi!2sfi" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</section>
+ <a name = "#Yhteystiedot"></a>
+ <section id="Yhteystiedot">
+
+<footer>
+    <address>
 
 Ravintola Oula
 Hallituskatu 12
@@ -101,6 +166,8 @@ Fax (016) 555 4756
 E-Mail: ravintola.oula@oulanet.fi 
 
 </address>
-     
+</section>
+</footer>
+
     </body>
     </html>
