@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    line-height: 3;
+
+}
+
+header {
+    background: darkblue;
+
+}
+
+main {
+    background: white;
+
+}
+
+footer {
+    background: royalblue;
+
+}
+
+.left-sidebar {
+    background: dodgerblue;
+
+}
+
+#oikea {
+    background: lightblue;
+
+}
+
+
+#nav {
+    background: lightskyblue
+}
+
+#kuva {
+  display: flex;
+}
+
+
+
+.container,
+.content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media all and (min-width: 768px) {
+    .content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+   header {
+
+   }
+
+    main {
+        flex: 7;
+        order: 2;
+        min-height: 80vh;
+
+    }
+
+    #kuva {
+        order: 3;
+        flex: 3;
+
+    }
+    
+    #oikea {
+        order: 4;
+        flex: 2;
+
+    }
+
+}
