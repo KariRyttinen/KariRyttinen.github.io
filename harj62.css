@@ -48,8 +48,6 @@ footer {
 }
 
 
-
-.container,
 .content {
     display: flex;
     flex-direction: column;
@@ -62,10 +60,6 @@ footer {
         flex-wrap: wrap;
     }
 
-   header {
-
-   }
-
     main {
         flex: 7;
         order: 2;
@@ -76,7 +70,7 @@ footer {
     #kuva {
         order: 3;
         flex: 3;
-
+        ;
     }
     
     #oikea {
@@ -85,4 +79,18 @@ footer {
 
     }
 
+}
+
+
+@media (max-width: 70cm) {
+
+#oikea {
+display:none
+}
+}
+
+@media (max-width: 680px) {
+    #kuva {
+        display:none
+    }
 }
