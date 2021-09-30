@@ -4,12 +4,12 @@ body {
 }
 
 header {
-    position: absolute;
+    position: relative;
     width: 100%;
 }
 
 footer {
-    position: absolute;
+    position: relative;
     width: 100%;
     background-color: #3A405A;
     display: flex;
@@ -17,10 +17,11 @@ footer {
 }
 
 #Taustakuva {
-    background-image:url(kuvat/book.jpg);
+    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    color: white
+    color: white;
+    width: 100%
 }
 
 #kellow {
@@ -28,7 +29,7 @@ footer {
     left: 0%;
     top: 100px;
     padding-left: 70px;
-    height: 150px;
+    height: 300px;
     width: 300px;
 }
 
@@ -55,7 +56,7 @@ h2 {
 
 
 #sinilaatikko {
-    position: absolute;
+    position: relative;
     bottom: 0;
     height: 250px;
     width: 100%;
@@ -66,7 +67,7 @@ h2 {
 }
  
 #tekstilaatikko {
-    position: absolute;
+    position: relative;
     bottom: 0;
     height: 280px;
     width: 100%;
@@ -96,7 +97,7 @@ text-decoration: none;
 
 .dropdown-content {
     display:none;
-    position:absolute;
+    position:relative;
     background-color: #3a405a;
     min-width:550px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -281,6 +282,7 @@ hr {
     overflow: hidden;
     border-style: inset;
     border-width: 1px;
+    position: relative;
 
 }
 
@@ -290,7 +292,7 @@ hr {
     left: 8vw;
     width: 28vw;
     height: 18vw;
-    background-image: url("kuvat/book-4.jpg");
+    background-image: url("kuvat/Taitokisakuvat-7.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -313,7 +315,6 @@ hr {
     position:relative;
     left: 15vw;
     width: 50vw;
-    height: 30vw;
 }
 
 .h_on {
@@ -364,6 +365,115 @@ hr {
     width: 28vw;
     height: 18vw;
     background-image: url("kuvat/book-4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  .sivukuva2 {
+    position: relative;
+    top: 7vw;
+    left: 8vw;
+    width: 28vw;
+    height: 18vw;
+    background-image: url("kuvat/Taitokisakuvat-8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sivukuva3 {
+    position: relative;
+    top: 7vw;
+    left: 8vw;
+    width: 28vw;
+    height: 18vw;
+    background-image: url("kuvat/Taitokisakuvat-9.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
